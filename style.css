@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+@media screen {
+    
+}
+
+html {
+	font-size: 6px;
+}
+
+body {
+	font-family: Montserrat;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.5;
+	background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 375px;
+
+    height: auto;
+	margin: 0 auto;
+    flex-direction: column;
+    border-radius: 2.5rem;
+}
+@media (min-width: 576px) {
+	
+	.container {
+		max-width: 540px;
+	}
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2.5rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+  }
+
+.description {
+    font-weight: 500;
+    font-family: Montserrat;
+    padding: 3rem;
+    margin-bottom: 0rem;
+    height: 40rem;
+}
+.description p {
+    font-size: 2.6rem;
+}
+.description p:first-child {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.description h1 {
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    color: hsl(212, 21%, 14%);
+    font-family: Fraunces;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.price {
+    flex-direction: row;
+    display: inline;
+    width: 35%;
+}
+
+
+#cheap {
+    font-size: 5rem;
+    font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+    margin-left: 3rem;
+    display: inline;
+}
+
+#expensive {
+    display: inline;
+    margin-left: 3rem;
+    position: relative;
+    top: -1rem;
+    font-size: 2.3rem;
+    text-decoration: line-through;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 2rem 2rem;
+    border-radius: 1.5rem;
+    display: block;
+    width: 85%;
+    color: white;
+    justify-self: center;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+a p {
+    display: inline;
+}
+a img {
+    margin-right: 1.5rem;
+    position: relative;
+    top: 0.3rem;
+}
+
+.button:hover {
+    background-color: hsl(158, 42%, 18%); /* Hover efekti */
+    transition: .3s;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    height: 5rem; /* Boşluk miktarı */
+}
+
